@@ -1,0 +1,35 @@
+/* * is used to override base styles */
+* {
+    box-sizing: border-box
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+
+    /*CSS grid styles*/
+    display: grid;
+
+    /*define auto row size*/
+    grid-auto-rows: 100px;
+
+    /*define our columns*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+article {
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+article:nth-child(odd) {
+    background: #55bbe9;
+}
+
+article:nth-child(even) {
+    background: #afbe29;
+}
