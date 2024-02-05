@@ -1,0 +1,50 @@
+/* font for search message */
+.search-bar {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 120;
+    font-style: normal;
+}
+
+/* flexbox nav-bar */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    list-style: none;
+    margin: 0;
+    background: burlywood;
+
+}
+
+/* borders of nav-bar */
+.navigation a {
+    text-decoration: none;
+    display: block;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1em;
+}
+
+.navigation li:first-of-type a {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* column for tablet */
+@media all and (max-width: 800px) {
+    .navigation{
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
